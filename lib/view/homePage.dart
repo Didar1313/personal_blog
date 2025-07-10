@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:personal_blog/post.dart';
-import 'package:personal_blog/postDetailPage.dart';
-import 'package:personal_blog/service.dart';
+import 'package:personal_blog/model/post.dart';
+import 'package:personal_blog/view/postDetailPage.dart';
+import 'package:personal_blog/service/service.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

@@ -1,6 +1,6 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:personal_blog/post.dart';
+import 'package:personal_blog/model/post.dart';
 
 class ApiService {
   static const String baseUrl = 'http://192.168.0.198:8080/api';

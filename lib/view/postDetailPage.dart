@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:personal_blog/post.dart';
-import 'package:personal_blog/service.dart';
+import 'package:personal_blog/model/post.dart';
+import 'package:personal_blog/service/service.dart';
 
 class PostDetailPage extends StatelessWidget {
   final int postId;
