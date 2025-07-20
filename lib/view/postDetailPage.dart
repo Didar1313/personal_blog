@@ -39,6 +39,15 @@ class PostDetailPage extends StatelessWidget {
                     height: 1.3,
                   ),
                 ),
+                SizedBox(height: 4,),
+                Text(
+                  post.formattedDate,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    height: 1.3,
+                  ),
+                ),
                 const SizedBox(height: 16),
                 Divider(color: Colors.grey.shade300, thickness: 1),
                 const SizedBox(height: 16),
