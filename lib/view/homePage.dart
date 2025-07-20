@@ -51,10 +51,18 @@ class HomePage extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
+                    SizedBox(height: 4,),
+                    Text(
+                      post.formattedDate,
+                      style: const TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
                     const SizedBox(height: 8),
                     Text(
-                      post.content.length > 100
-                          ? '${post.content.substring(0, 100)}...'
+                      post.content.length > 200
+                          ? '${post.content.substring(0, 200)}...'
                           : post.content,
                       style: const TextStyle(
                         fontSize: 16,
