@@ -17,11 +17,7 @@ class ApiService {
 
   static Future<Post> fetchPostById(int id) async {
     final url = '$baseUrl/posts/$id';
-    print("Requesting: $url");
-
     final response = await http.get(Uri.parse(url));
-    print("Status Code: ${response.statusCode}");
-    print("Body: ${response.body}");
 
     if (response.statusCode == 200) {
       return Post.fromJson(json.decode(response.body));
