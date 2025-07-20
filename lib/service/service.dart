@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:personal_blog/model/post.dart';
 
 class ApiService {
-  static const String baseUrl = 'http://192.168.0.198:8080/api';
+  static const String baseUrl = 'http://10.0.2.2:8081/api';
 
   static Future<List<Post>> fetchPosts() async {
     final response = await http.get(Uri.parse('$baseUrl/posts'));
